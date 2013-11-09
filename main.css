@@ -31,8 +31,6 @@ p{
 
 a{
 	color: #34495e;
-	display:block;
-	text-decoration: none;
 }
 
 body{
@@ -46,7 +44,7 @@ body{
 	margin: 0 auto;
 	width:100%;
 	max-width:500px;
-	padding: 20px;
+	padding: 20px 20px 0;
 }
 
 .description{
@@ -55,14 +53,25 @@ body{
 
 .item{
 	padding:20px;
+	display:block;
 	margin-bottom: 20px;
 	border-radius: 7px;
 	background-color: #f7f9f9;
 	color: #34495e;
 	transition:background-color 0.3s;
-
+	text-decoration: none;
 }
+
 .item:hover{
-	background-color: white;
+	background-color: #fff;
 	transition-duration:0;
+}
+
+.footer{
+	margin-top: 60px;
+	text-align: center;
+}
+
+.footer p{
+	font-size:16px;
 }
