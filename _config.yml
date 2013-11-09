@@ -1,0 +1,4 @@
+name: "Stylibrary"
+description: "A collection of front end style guides"
+baseurl: "/stylibrary"
+markdown: rdiscount

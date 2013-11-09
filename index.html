@@ -1,0 +1,51 @@
+---
+title: Stylibrary | A collection of front end style guides
+guides:
+- [GitHub, 'http://github.com']
+- [Google, 'http://github.com']
+- [The Guardian, 'http://pasteup.guim.co.uk/styleguide.html']
+- [Lullabot, 'http://lullabot.com']
+- [Mailchimp, 'http://mailchimp.com']
+- [Mapbox, 'https://www.mapbox.com/base/styling/']
+- [Stanford University, 'https://www.mapbox.com/base/styling/']
+- [Wordpress, 'http://make.wordpress.org/core/handbook/coding-standards/css/']
+---
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<title>{{page.title}}</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">
+		<link href='http://fonts.googleapis.com/css?family=Sansita+One|Lato:400,400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+
+			<h1>Stylibrary</h1>
+
+			<div class="description">
+				<p>Hyphens or camelCase? Tabs or spaces? Px or em?</p>
+				<p>This collection of front-end style guides will give you an insight into how various developers from across the web organise and maintain their HTML and CSS.</p>
+			</div>
+
+			<div class="list">
+				{% for guide in page.guides %}
+					<a class="item" href='{{guide[1]}}' target='_blank'>
+						<h2>{{guide[0]}}</h2>
+					</a>
+				{% endfor %}
+			</div>
+
+		</div>
+
+		<a href="https://github.com/Aptary/stylibrary"><img style="position: absolute; top: 0; right: 0; border: 0;" src="fork-me-ribbon.png" alt="Fork me on GitHub"></a>
+
+	</body>
+
+</html>
